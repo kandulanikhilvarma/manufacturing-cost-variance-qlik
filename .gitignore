@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Qlik app files (binary, not useful without Qlik Desktop)
+*.qvf
+
+# OS
+.DS_Store
+Thumbs.db
