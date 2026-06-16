@@ -1,126 +1,155 @@
 # Manufacturing Cost Variance Analysis
-**A Qlik Sense Case Study**
 
-Dashboard built on synthetic manufacturing cost data. 12 months, 6 cost
-categories, 2 product lines — budget vs. actual, designed to give a controller
-one-click answers instead of a 20-minute Excel rebuild.
+> Manufacturing cost variance dashboard built in Qlik Sense using synthetic ERP-style data.
+
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Qlik Sense](https://img.shields.io/badge/BI-Qlik%20Sense-green)
+![Python](https://img.shields.io/badge/Python-3.10+-yellow)
+![Status](https://img.shields.io/badge/status-Complete-success)
 
 ---
 
-## The problem
+## Dashboard Preview
 
-Monthly variance reporting in manufacturing controlling usually lives in Excel:
-budget vs. actual, manually color-coded, pasted into a slide for the month-end
-meeting. When a manager asks "which cost center is running hot this quarter?"
-finding the answer takes longer than it should.
+![Full Dashboard](dashboard/screenshots/full_dashboard.png)
 
-This dashboard gives that answer in seconds — by category, by product line, by
-month — with a click instead of a pivot table.
+---
+
+## Business Problem
+
+Manufacturing controllers frequently rely on Excel-based variance reports to compare budgeted and actual costs.
+
+These reports are:
+- Manual
+- Time-consuming
+- Difficult to explore interactively
+
+This dashboard provides a self-service view of manufacturing cost performance, enabling users to identify overspending categories and variance trends with a few clicks.
+
+---
+
+## Solution
+
+Built a Qlik Sense dashboard that enables:
+
+- Budget vs Actual analysis
+- Cost variance monitoring
+- Monthly trend analysis
+- Product line filtering
+- Cost category drill-down
 
 ---
 
 ## Dataset
 
-`data/manufacturing_variance.csv` — 144 rows.
+Synthetic manufacturing dataset containing:
 
-| Column | Type | Description |
-|---|---|---|
-| Month | YYYY-MM | Reporting month |
-| Product_Line | String | Sealing Systems / Welding Components |
-| Cost_Category | String | Raw Materials, Direct Labor, Machine Overhead, Packaging, Quality Inspection, Logistics |
-| Budget_EUR | Float | Monthly planned cost in EUR |
-| Actual_EUR | Float | Actual spend in EUR |
-| Variance_EUR | Float | Actual minus Budget |
-| Variance_Pct | Float | Variance as % of Budget |
-| Over_Budget | Yes/No | Filter flag for conditional coloring |
+| Metric | Value |
+|----------|----------|
+| Months | 12 |
+| Product Lines | 2 |
+| Cost Categories | 6 |
+| Records | 144 |
 
-**Built-in variance patterns (realistic, not random noise):**
+### Data Fields
 
-| Category | Pattern | Period |
-|---|---|---|
-| Raw Materials | +8 to +14% over budget | July–September |
-| Direct Labor | −3 to −8% under budget | July–December |
-| Packaging | ~0.5% monthly cost creep | Full year |
-| Logistics | +5 to +11% over budget | October–December |
-| Machine Overhead | Flat ±3% | Full year |
-| Quality Inspection | Flat ±5% | Full year |
-
-Full year result: **+1.2% over total budget** (€2,536,879 actual vs. €2,508,000 budget).
+| Field | Description |
+|---------|---------|
+| Month | Reporting month |
+| Product_Line | Product family |
+| Cost_Category | Cost type |
+| Budget_EUR | Planned spend |
+| Actual_EUR | Actual spend |
+| Variance_EUR | Actual - Budget |
+| Variance_Pct | Variance percentage |
+| Over_Budget | Yes/No indicator |
 
 ---
 
-## Dashboard design
+## Dashboard Components
 
-One screen. Three components.
+### KPI Overview
 
-**KPI strip (top row)**
-Total Budget | Total Actual | Variance EUR | Variance % — color-coded green/red.
-All four update instantly when any filter is applied.
+Tracks:
 
-**Bar chart — actual vs. budget by cost category**
-Side-by-side bars. The gap is visible without reading numbers.
-Clicking any bar cross-filters the trend line below it via Qlik's associative model.
+- Total Budget
+- Total Actual
+- Variance (€)
+- Variance (%)
 
-**Line chart — monthly variance % trend by category**
-Shows whether a category is improving or getting worse over time.
-Raw Materials peaks in Q3 and comes back down — that's the story this dashboard tells.
+Conditional formatting highlights unfavorable variances.
 
-**Filter pane (left side)**
-Product Line | Cost Category | Month
-
-One screen by design. A second drill-down sheet would be the natural next step
-with real data, but for a demo it adds surface area without adding insight.
+![KPI Strip](dashboard/screenshots/kpi_strip.png)
 
 ---
 
-## What the numbers show
+### Budget vs Actual by Cost Category
 
-```
-Category               Budget (€)   Actual (€)    Var %
-----------------------------------------------------------
-Direct Labor              624,000      610,644  ▼2.1%
-Logistics                 207,600      210,621  ▲1.5%
-Machine Overhead          396,000      397,354  ▲0.3%
-Packaging                 174,000      178,667  ▲2.7%
-Quality Inspection        110,400      110,318  ▼0.1%
-Raw Materials             996,000    1,029,275  ▲3.3%
-----------------------------------------------------------
-TOTAL                   2,508,000    2,536,879  ▲1.2%
-```
+Compares planned and actual spending across categories.
 
-Raw Materials is the main story: 3.3% over for the year, concentrated in Q3.
-Direct Labor savings (2.1% under) offset roughly half of that.
-Packaging at 2.7% is the slow-burn problem — small monthly gaps that compound.
+![Variance by Category](dashboard/screenshots/variance_by_category.png)
+
+Key finding:
+
+- Raw Materials contributed the largest budget overrun.
 
 ---
 
-## How to run
+### Monthly Variance Trend
 
-```bash
-# Regenerate the dataset
-python scripts/generate_data.py
+Shows variance performance over time.
 
-# Validate + print summary
-python scripts/prepare_data.py
-```
+![Monthly Trend](dashboard/screenshots/monthly_trend.png)
 
-No pip dependencies. Python 3.10+ with stdlib only.
+Key finding:
 
-**To open the dashboard:** load `data/manufacturing_variance.csv` into
-Qlik Sense Desktop as a new app (free trial at qlik.com).
+- Raw Materials peaked during Q3.
+- Direct Labor savings partially offset overspending.
 
 ---
 
-## With real data
+## Key Insights
 
-Swap the CSV for an SAP export or ERP extract. The data model stays the same.
-Natural extensions: cost center dimension, rolling YTD vs. prior year, and
-budget input fields to replace the static Budget_EUR column.
+| Insight | Impact |
+|----------|----------|
+| Raw Materials exceeded budget by 3.3% | Largest variance driver |
+| Direct Labor finished 2.1% under budget | Offset part of overrun |
+| Packaging increased steadily throughout the year | Emerging risk |
+| Total annual variance was +1.2% | Overall budget miss |
 
 ---
 
-## Stack
+## Technology Stack
 
-- Qlik Sense Desktop (free — qlik.com/trial)
-- Python 3.10+, stdlib only
-- Dataset: synthetic, built for this demo
+- Qlik Sense
+- Python 3.10+
+- CSV Data Source
+- GitHub
+
+---
+
+## Repository Structure
+
+```text
+Manufacturing-Cost-Variance-Analysis/
+│
+├── data/
+│   └── manufacturing_variance.csv
+│
+├── dashboard/
+│   ├── Manufacturing_Cost_Variance_Dashboard.pdf
+│   └── screenshots/
+│       ├── full_dashboard.png
+│       ├── kpi_strip.png
+│       ├── variance_by_category.png
+│       └── monthly_trend.png
+│
+├── scripts/
+│   ├── generate_data.py
+│   └── prepare_data.py
+│
+├── qlik/
+│   └── Manufacturing_Cost_Variance.qvf
+│
+├── README.md
+└── LICENSE
