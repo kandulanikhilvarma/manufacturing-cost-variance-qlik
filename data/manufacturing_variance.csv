@@ -1,0 +1,145 @@
+Month,Product_Line,Cost_Category,Budget_EUR,Actual_EUR,Variance_EUR,Variance_Pct,Over_Budget
+2024-01,Sealing Systems,Raw Materials,45000,45376.45,376.45,0.84,Yes
+2024-01,Welding Components,Raw Materials,38000,36917.02,-1082.98,-2.85,No
+2024-01,Sealing Systems,Direct Labor,28000,27902.05,-97.95,-0.35,No
+2024-01,Welding Components,Direct Labor,24000,23841.42,-158.58,-0.66,No
+2024-01,Sealing Systems,Machine Overhead,18000,18302.82,302.82,1.68,Yes
+2024-01,Welding Components,Machine Overhead,15000,15207.52,207.52,1.38,Yes
+2024-01,Sealing Systems,Packaging,8000,8125.5,125.5,1.57,Yes
+2024-01,Welding Components,Packaging,6500,6392.6,-107.4,-1.65,No
+2024-01,Sealing Systems,Quality Inspection,5000,4960.96,-39.04,-0.78,No
+2024-01,Welding Components,Quality Inspection,4200,4002.51,-197.49,-4.7,No
+2024-01,Sealing Systems,Logistics,9500,9360.39,-139.61,-1.47,No
+2024-01,Welding Components,Logistics,7800,7841.92,41.92,0.54,Yes
+2024-02,Sealing Systems,Raw Materials,45000,43721.65,-1278.35,-2.84,No
+2024-02,Welding Components,Raw Materials,38000,37313.35,-686.65,-1.81,No
+2024-02,Sealing Systems,Direct Labor,28000,28531.81,531.81,1.9,Yes
+2024-02,Welding Components,Direct Labor,24000,24304.72,304.72,1.27,Yes
+2024-02,Sealing Systems,Machine Overhead,18000,17838.4,-161.6,-0.9,No
+2024-02,Welding Components,Machine Overhead,15000,15141.95,141.95,0.95,Yes
+2024-02,Sealing Systems,Packaging,8000,8139.02,139.02,1.74,Yes
+2024-02,Welding Components,Packaging,6500,6404.19,-95.81,-1.47,No
+2024-02,Sealing Systems,Quality Inspection,5000,5152.91,152.91,3.06,Yes
+2024-02,Welding Components,Quality Inspection,4200,4283.22,83.22,1.98,Yes
+2024-02,Sealing Systems,Logistics,9500,9441.27,-58.73,-0.62,No
+2024-02,Welding Components,Logistics,7800,7650.89,-149.11,-1.91,No
+2024-03,Sealing Systems,Raw Materials,45000,46234.48,1234.48,2.74,Yes
+2024-03,Welding Components,Raw Materials,38000,37627.44,-372.56,-0.98,No
+2024-03,Sealing Systems,Direct Labor,28000,27595.81,-404.19,-1.44,No
+2024-03,Welding Components,Direct Labor,24000,23659.27,-340.73,-1.42,No
+2024-03,Sealing Systems,Machine Overhead,18000,18402.74,402.74,2.24,Yes
+2024-03,Welding Components,Machine Overhead,15000,15152.79,152.79,1.02,Yes
+2024-03,Sealing Systems,Packaging,8000,8178.28,178.28,2.23,Yes
+2024-03,Welding Components,Packaging,6500,6624.73,124.73,1.92,Yes
+2024-03,Sealing Systems,Quality Inspection,5000,5018.11,18.11,0.36,Yes
+2024-03,Welding Components,Quality Inspection,4200,4398.71,198.71,4.73,Yes
+2024-03,Sealing Systems,Logistics,9500,9466.73,-33.27,-0.35,No
+2024-03,Welding Components,Logistics,7800,7867.41,67.41,0.86,Yes
+2024-04,Sealing Systems,Raw Materials,45000,45889.39,889.39,1.98,Yes
+2024-04,Welding Components,Raw Materials,38000,38270.23,270.23,0.71,Yes
+2024-04,Sealing Systems,Direct Labor,28000,28887.67,887.67,3.17,Yes
+2024-04,Welding Components,Direct Labor,24000,24351.39,351.39,1.46,Yes
+2024-04,Sealing Systems,Machine Overhead,18000,18274.11,274.11,1.52,Yes
+2024-04,Welding Components,Machine Overhead,15000,14734.37,-265.63,-1.77,No
+2024-04,Sealing Systems,Packaging,8000,8032.93,32.93,0.41,Yes
+2024-04,Welding Components,Packaging,6500,6542.74,42.74,0.66,Yes
+2024-04,Sealing Systems,Quality Inspection,5000,4789.9,-210.1,-4.2,No
+2024-04,Welding Components,Quality Inspection,4200,4087.77,-112.23,-2.67,No
+2024-04,Sealing Systems,Logistics,9500,9282.17,-217.83,-2.29,No
+2024-04,Welding Components,Logistics,7800,7717.77,-82.23,-1.05,No
+2024-05,Sealing Systems,Raw Materials,45000,45366.35,366.35,0.81,Yes
+2024-05,Welding Components,Raw Materials,38000,37691.82,-308.18,-0.81,No
+2024-05,Sealing Systems,Direct Labor,28000,28061.9,61.9,0.22,Yes
+2024-05,Welding Components,Direct Labor,24000,23821.69,-178.31,-0.74,No
+2024-05,Sealing Systems,Machine Overhead,18000,17880.28,-119.72,-0.67,No
+2024-05,Welding Components,Machine Overhead,15000,15402.49,402.49,2.68,Yes
+2024-05,Sealing Systems,Packaging,8000,8207.37,207.37,2.59,Yes
+2024-05,Welding Components,Packaging,6500,6658.37,158.37,2.44,Yes
+2024-05,Sealing Systems,Quality Inspection,5000,4835.57,-164.43,-3.29,No
+2024-05,Welding Components,Quality Inspection,4200,4296.23,96.23,2.29,Yes
+2024-05,Sealing Systems,Logistics,9500,9323.66,-176.34,-1.86,No
+2024-05,Welding Components,Logistics,7800,7773.18,-26.82,-0.34,No
+2024-06,Sealing Systems,Raw Materials,45000,46321.71,1321.71,2.94,Yes
+2024-06,Welding Components,Raw Materials,38000,38319.2,319.2,0.84,Yes
+2024-06,Sealing Systems,Direct Labor,28000,28375.68,375.68,1.34,Yes
+2024-06,Welding Components,Direct Labor,24000,24505.84,505.84,2.11,Yes
+2024-06,Sealing Systems,Machine Overhead,18000,18398.57,398.57,2.21,Yes
+2024-06,Welding Components,Machine Overhead,15000,15282.0,282.0,1.88,Yes
+2024-06,Sealing Systems,Packaging,8000,8113.3,113.3,1.42,Yes
+2024-06,Welding Components,Packaging,6500,6540.85,40.85,0.63,Yes
+2024-06,Sealing Systems,Quality Inspection,5000,4907.73,-92.27,-1.85,No
+2024-06,Welding Components,Quality Inspection,4200,4102.45,-97.55,-2.32,No
+2024-06,Sealing Systems,Logistics,9500,9355.3,-144.7,-1.52,No
+2024-06,Welding Components,Logistics,7800,8080.83,280.83,3.6,Yes
+2024-07,Sealing Systems,Raw Materials,45000,50966.19,5966.19,13.26,Yes
+2024-07,Welding Components,Raw Materials,38000,41757.47,3757.47,9.89,Yes
+2024-07,Sealing Systems,Direct Labor,28000,26677.61,-1322.39,-4.72,No
+2024-07,Welding Components,Direct Labor,24000,22554.76,-1445.24,-6.02,No
+2024-07,Sealing Systems,Machine Overhead,18000,18463.09,463.09,2.57,Yes
+2024-07,Welding Components,Machine Overhead,15000,15044.14,44.14,0.29,Yes
+2024-07,Sealing Systems,Packaging,8000,8164.76,164.76,2.06,Yes
+2024-07,Welding Components,Packaging,6500,6629.12,129.12,1.99,Yes
+2024-07,Sealing Systems,Quality Inspection,5000,5030.68,30.68,0.61,Yes
+2024-07,Welding Components,Quality Inspection,4200,4100.35,-99.65,-2.37,No
+2024-07,Sealing Systems,Logistics,9500,9603.75,103.75,1.09,Yes
+2024-07,Welding Components,Logistics,7800,8056.21,256.21,3.28,Yes
+2024-08,Sealing Systems,Raw Materials,45000,49678.38,4678.38,10.4,Yes
+2024-08,Welding Components,Raw Materials,38000,41540.05,3540.05,9.32,Yes
+2024-08,Sealing Systems,Direct Labor,28000,27156.55,-843.45,-3.01,No
+2024-08,Welding Components,Direct Labor,24000,22691.43,-1308.57,-5.45,No
+2024-08,Sealing Systems,Machine Overhead,18000,17721.82,-278.18,-1.55,No
+2024-08,Welding Components,Machine Overhead,15000,14735.34,-264.66,-1.76,No
+2024-08,Sealing Systems,Packaging,8000,8155.09,155.09,1.94,Yes
+2024-08,Welding Components,Packaging,6500,6760.64,260.64,4.01,Yes
+2024-08,Sealing Systems,Quality Inspection,5000,5146.04,146.04,2.92,Yes
+2024-08,Welding Components,Quality Inspection,4200,4167.31,-32.69,-0.78,No
+2024-08,Sealing Systems,Logistics,9500,9257.25,-242.75,-2.56,No
+2024-08,Welding Components,Logistics,7800,7774.36,-25.64,-0.33,No
+2024-09,Sealing Systems,Raw Materials,45000,51289.53,6289.53,13.98,Yes
+2024-09,Welding Components,Raw Materials,38000,42246.38,4246.38,11.17,Yes
+2024-09,Sealing Systems,Direct Labor,28000,27119.51,-880.49,-3.14,No
+2024-09,Welding Components,Direct Labor,24000,23112.94,-887.06,-3.7,No
+2024-09,Sealing Systems,Machine Overhead,18000,17650.33,-349.67,-1.94,No
+2024-09,Welding Components,Machine Overhead,15000,15240.54,240.54,1.6,Yes
+2024-09,Sealing Systems,Packaging,8000,8378.15,378.15,4.73,Yes
+2024-09,Welding Components,Packaging,6500,6769.61,269.61,4.15,Yes
+2024-09,Sealing Systems,Quality Inspection,5000,4883.41,-116.59,-2.33,No
+2024-09,Welding Components,Quality Inspection,4200,4259.2,59.2,1.41,Yes
+2024-09,Sealing Systems,Logistics,9500,9289.18,-210.82,-2.22,No
+2024-09,Welding Components,Logistics,7800,7803.38,3.38,0.04,Yes
+2024-10,Sealing Systems,Raw Materials,45000,44875.05,-124.95,-0.28,No
+2024-10,Welding Components,Raw Materials,38000,39034.7,1034.7,2.72,Yes
+2024-10,Sealing Systems,Direct Labor,28000,26986.19,-1013.81,-3.62,No
+2024-10,Welding Components,Direct Labor,24000,22396.07,-1603.93,-6.68,No
+2024-10,Sealing Systems,Machine Overhead,18000,18090.53,90.53,0.5,Yes
+2024-10,Welding Components,Machine Overhead,15000,14833.99,-166.01,-1.11,No
+2024-10,Sealing Systems,Packaging,8000,8492.04,492.04,6.15,Yes
+2024-10,Welding Components,Packaging,6500,6888.83,388.83,5.98,Yes
+2024-10,Sealing Systems,Quality Inspection,5000,4899.22,-100.78,-2.02,No
+2024-10,Welding Components,Quality Inspection,4200,4258.36,58.36,1.39,Yes
+2024-10,Sealing Systems,Logistics,9500,10322.11,822.11,8.65,Yes
+2024-10,Welding Components,Logistics,7800,8261.53,461.53,5.92,Yes
+2024-11,Sealing Systems,Raw Materials,45000,45708.78,708.78,1.58,Yes
+2024-11,Welding Components,Raw Materials,38000,38089.78,89.78,0.24,Yes
+2024-11,Sealing Systems,Direct Labor,28000,26850.08,-1149.92,-4.11,No
+2024-11,Welding Components,Direct Labor,24000,22716.42,-1283.58,-5.35,No
+2024-11,Sealing Systems,Machine Overhead,18000,17640.51,-359.49,-2.0,No
+2024-11,Welding Components,Machine Overhead,15000,14943.12,-56.88,-0.38,No
+2024-11,Sealing Systems,Packaging,8000,8246.23,246.23,3.08,Yes
+2024-11,Welding Components,Packaging,6500,6936.57,436.57,6.72,Yes
+2024-11,Sealing Systems,Quality Inspection,5000,5189.36,189.36,3.79,Yes
+2024-11,Welding Components,Quality Inspection,4200,4339.3,139.3,3.32,Yes
+2024-11,Sealing Systems,Logistics,9500,10150.28,650.28,6.85,Yes
+2024-11,Welding Components,Logistics,7800,8217.11,417.11,5.35,Yes
+2024-12,Sealing Systems,Raw Materials,45000,46020.63,1020.63,2.27,Yes
+2024-12,Welding Components,Raw Materials,38000,39019.04,1019.04,2.68,Yes
+2024-12,Sealing Systems,Direct Labor,28000,25879.91,-2120.09,-7.57,No
+2024-12,Welding Components,Direct Labor,24000,22663.19,-1336.81,-5.57,No
+2024-12,Sealing Systems,Machine Overhead,18000,17702.29,-297.71,-1.65,No
+2024-12,Welding Components,Machine Overhead,15000,15270.45,270.45,1.8,Yes
+2024-12,Sealing Systems,Packaging,8000,8525.07,525.07,6.56,Yes
+2024-12,Welding Components,Packaging,6500,6760.88,260.88,4.01,Yes
+2024-12,Sealing Systems,Quality Inspection,5000,4987.64,-12.36,-0.25,No
+2024-12,Welding Components,Quality Inspection,4200,4220.92,20.92,0.5,Yes
+2024-12,Sealing Systems,Logistics,9500,10126.08,626.08,6.59,Yes
+2024-12,Welding Components,Logistics,7800,8598.3,798.3,10.23,Yes
