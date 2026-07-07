@@ -225,3 +225,14 @@ Swap the CSV for an SAP export or ERP extract. The data model stays the same. Na
 - Qlik Sense Desktop — free, [qlik.com/trial](https://www.qlik.com/us/trial)
 - Python 3.10+, stdlib only for the data pipeline, [pytest](https://docs.pytest.org/) for the test suite
 - Dataset: synthetic, built for this demo, fully reproducible from [`scripts/generate_data.py`](scripts/generate_data.py)
+
+---
+
+## License
+
+Released under the MIT License — see [LICENSE](LICENSE).
+
+---
+
+**Nikhilvarma Kandula** — Data Science · NLP · Statistical Analysis  
+[LinkedIn](https://www.linkedin.com/in/nikhilvarmakandula) · [Email](mailto:kandulanikhilvarma@gmail.com) · [Portfolio](https://kandula.studio)
