@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Manufacturing Cost Variance: A Qlik Sense Dashboard Case Study"
+authors:
+  - family-names: Kandula
+    given-names: Nikhilvarma
+    email: kandulanikhilvarma@gmail.com
+    website: "https://kandula.studio"
+type: software
+url: "https://github.com/kandulanikhilvarma/manufacturing-cost-variance-qlik"
+repository-code: "https://github.com/kandulanikhilvarma/manufacturing-cost-variance-qlik"
+license: MIT
+keywords:
+  - manufacturing
+  - cost-variance
+  - qlik
+  - business-intelligence
